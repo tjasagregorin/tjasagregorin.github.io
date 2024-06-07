@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="sl">
+
+<head>
+    <title>Vektorska in rastrska grafika</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <!-- NAVIGACIJSKI MENI -->
+    <nav>
+        <div class="divlogo" onclick="window.location.href='index.html'">
+            <img src="slike/logo moder-01.png" alt="Logo">
+            <h2> Vec<span>pix</span></h2>
+        </div>
+
+        <ul>
+            <li><a href="vektorskagrafika.html">Vektorska grafika</a></li>
+            <li><a href="rastrskagrafika.html">Rastrska grafika</a></li>
+            <li><a href="primerjava.html">Primerjava</a></li>
+            <li><a href="programi.html">Programi</a></li>
+            <li><a href="oblikovanje.html">Oblikovanje</a></li>
+            <li><a href="viri.html">Viri</a></li>
+        </ul>
+        <a href="index.html" class="btn">Domov</a>
+    </nav>
+    <!-- KAJ JE RASTRSKA GRAFIKA -->
+    <section class="sekcija pozdrav">
+        <div class="main">
+            <div class="section-text-long">
+                <h2>Rastrska grafika</h2>
+                <p> Rastrska grafika je osnova za številne digitalne slike, ki jih vidimo in uporabljamo vsak dan.
+                    Temelji na uporabi mreže pikslov, kjer vsak piksel predstavlja majhen del celotne slike. Ta pristop
+                    omogoča prikaz kompleksnih podrobnosti in barvnih prehodov, ki so bistveni za realističen prikaz
+                    slik.</p>
+            </div>
+        </div>
+    </section>
+    <!-- OSNOVE -->
+    <section class="sekcija rastr">
+        <h2 class="vrh osnove">Osnove rastrske grafike</h2>
+        <div id="stolpci" class="osnove">
+            <div class="section-text">
+                <h3>Piksli in resolucija</h3>
+                <p>Rastrska grafika je sestavljena iz pikslov, ki so majhni barvni kvadratki, postavljeni v mrežo.
+                    Resolucija slike, izražena v pikslov na palec (ppi), določa, koliko pikslov je prisotnih v eni enoti
+                    dolžine. Višja kot je resolucija, več podrobnosti lahko prikaže slika. Na primer, fotografija z
+                    visoko
+                    ločljivostjo bo imela več pikslov in bo videti ostrejša in bolj podrobna.</p>
+                <img src="slike/biti-01.png">
+            </div>
+            <div class="section-text">
+                <h3>Barvna globina</h3>
+                <p>Barvna globina se nanaša na število bitov, uporabljenih za predstavitev barve vsakega pikslov. Višja
+                    barvna globina omogoča večjo paleto barv, kar je ključno za realističen prikaz slik. Standardne
+                    barvne
+                    globine vključujejo 8-bitno (256 barv), 16-bitno (65,536 barv) in 24-bitno (16,7 milijona barv).</p>
+                <img src="slike/barvna_globina-01.png">
+            </div>
+        </div>
+    </section>
+
+    <!-- FORMATI -->
+    <section class="section pozdrav">
+        <div id="levo" class="main">
+            <div class="section-text-long">
+                <h2 id="manjse">Formati datotek za rastrsko grafiko</h2>
+                <p id="vecje">Rastrske slike lahko shranite v več različnih formatih, od katerih ima vsak svoje
+                    prednosti in slabosti
+                    glede na uporabo:</p>
+                <p><span class="odebeljeno">JPEG</span> <span class="tanko">(Joint Photographic Experts Group)</span>:
+                    JPEG je eden najpogosteje uporabljenih formatov za shranjevanje
+                    fotografij. Uporablja lossy (izgubno) stiskanje, kar pomeni, da se nekateri podatki izgubijo pri
+                    shranjevanju, vendar to omogoča manjšo velikost datoteke. Ta format je primeren za fotografije in
+                    spletne slike, kjer je majhna velikost datoteke pomembna.</p>
+                <img src="slike/jpeg.png">
+                <p><span class="odebeljeno">PNG</span> <span class="tanko">(Portable Network Graphics)</span> : PNG
+                    podpira brezizgubno stiskanje, kar pomeni, da se kakovost slike ne
+                    zmanjša pri shranjevanju. Ta format je idealen za slike, ki zahtevajo prosojnost in visoko kakovost,
+                    kot
+                    so spletne grafike, logotipi in ilustracije.</p>
+                <img src="slike/png.png">
+                <p><span class="odebeljeno">GIF </span> <span class="tanko">(Graphics Interchange Format)</span>: GIF
+                    podpira le 256 barv, vendar omogoča animacije in prosojnost.
+                    Uporablja se predvsem za preproste spletne grafike in animacije.</p>
+                <img src="slike/gif.png">
+                <p><span class="odebeljeno">TIFF</span> <span class="tanko"> (Tagged Image File Format)</span>: TIFF je
+                    brezizguben format, ki se pogosto uporablja za shranjevanje slik
+                    visoke kakovosti v profesionalni fotografiji in založništvu. Datoteke TIFF so velike, vendar
+                    omogočajo
+                    shranjevanje bogatih podrobnosti.</p>
+                <img src="slike/tiff.png">
+                <p><span class="odebeljeno">BMP</span> <span class="tanko"> (Bitmap)</span>: BMP je osnovni format za
+                    shranjevanje rastrskih slik brez stiskanja. Uporablja se redko,
+                    saj ustvarja zelo velike datoteke.</p>
+                <img src="slike/bmp.png">
+            </div>
+        </div>
+
+    </section>
+
+    <!-- PREDNOSTI -->
+    <section class="container">
+        <div class="image-section">
+            <img src="slike/kameleon.jpg" alt="Kameleon">
+        </div>
+        <div class="text-section text-section-1">
+            <div style="padding-left: 80px;">
+                <h2>Prednosti in slabosti rastrske grafike</h2>
+                <ul>
+                    <li><span class="odebeljeno">Prednosti</span> : Rastrska grafika omogoča zelo natančno in podrobno
+                        upodabljanje slik.
+                        Je idealna za
+                        fotografije in slike z bogatimi teksturami in barvnimi prehodi</li>
+                    <li><span class="odebeljeno">Slabosti</span> : Slaba stran rastrske grafike je njena odvisnost od
+                        ločljivosti. Če sliko povečamo
+                        preko njene izvirne ločljivosti, postane zamegljena in pikselirana. Poleg tega rastrske datoteke
+                        pogosto zavzamejo več prostora na disku kot vektorske datoteke.</li>
+                </ul>
+            </div>
+        </div>
+        </div>
+    </section>
+    <!-- UPORABA -->
+    <section class="container">
+        <div class="text-section text-section-2">
+            <div style="padding-left: 80px;">
+                <h2 id="bela">Primeri uporabe rastrske grafike</h2>
+                <ul>
+                    <li><span class="odebeljeno">Fotografija</span> : Vsaka digitalna fotografija je oblika rastrske
+                        grafike.</li>
+                    <li><span class="odebeljeno">Digitalna umetnost</span> : Umetniki uporabljajo rastrsko grafiko za
+                        ustvarjanje digitalnih slik, ki
+                        posnemajo tradicionalne medije, kot so olje, akvarel in svinčnik.</li>
+                    <li><span class="odebeljeno">Spletna in tiskana oblika</span> : Večina slik, ki jih vidimo na
+                        spletnih straneh in v tiskanih
+                        publikacijah, so rastrske.</li>
+                </ul>
+            </div>
+        </div>
+        <div class="image-section">
+            <img src="slike/knjiga.jpg">
+        </div>
+    </section>
+
+    <div class="service">
+        <div class="title">
+            <h2>Morda te zanima tudi</h2>
+        </div>
+        <div class="box">
+            <div class="card">
+                <div >
+                    <img class="card-image" src="slike/Pomaranca.png">
+                </div>
+                <h5>Vektorska grafika</h5>
+                <div class="pra">
+                    <p style="text-align: center;">
+                        <a class="button" href="vektorskagrafika.html#about">Več</a>
+                    </p>
+                </div>
+            </div>
+            <div class="card">
+                <div >
+                    <img class="card-image" src="slike/ai.png">
+                </div>
+                <h5>Programi</h5>
+                <div class="pra">
+                    <p style="text-align: center;">
+                        <a class="button" href="programi.html">Več</a>
+                    </p>
+                </div>
+            </div>
+            <div class="card">
+                <div>
+                    <img class="card-image" src="slike/kozarec.jpg">
+                </div>
+                <h5>Nasveti za oblikovanje</h5>
+                <div class="pra">
+                    <p style="text-align: center;">
+                        <a class="button" href="oblikovanje.html#nasveti">Več</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="social">
+            <a href="https://www.facebook.com" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://www.instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://x.com" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+        </div>
+        <p class="end">&copy;2024 Tjasa Gregorin</p>
+    </footer>
+</body>
+
+</html>
